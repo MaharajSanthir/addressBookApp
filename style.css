@@ -1,0 +1,213 @@
+body {
+
+  font-family: 'Roboto', sans-serif;
+  background: #87CEFA; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #87CEFA, #7FFFD4); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #87CEFA, #7FFFD4); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #87CEFA, #7FFFD4); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #87CEFA, #7FFFD4); /* Standard syntax */
+}
+
+.container {
+  margin-top: 40px;
+  display: block;
+  border: 5px solid #000;
+  border-radius: 10px;
+  width:880px;
+
+
+  background: #C0C0C0; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #C0C0C0, #F5F5F5); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #C0C0C0, #F5F5F5); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #C0C0C0, #F5F5F5); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #C0C0C0, #F5F5F5); /* Standard syntax */
+}
+
+.center-div {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.border-thin {
+  border: 1px solid #ccc;
+}
+
+.list-header {
+ display: inline-block;
+}
+
+.list-body {
+  padding: 10px;
+  position:relative;
+  background: 	#DCDCDC; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #DCDCDC, #F5F5F5); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #DCDCDC, #F5F5F5); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #DCDCDC, #F5F5F5); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #DCDCDC, #F5F5F5); /* Standard syntax */
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+
+
+.btnSortBy {
+  background-color: #1E90FF;
+
+}
+
+
+.labelBoxed {
+  border: none;
+  color: #333;
+  padding: 8px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 4px;
+}
+
+
+.form-control {
+  display: block;
+  margin: 5px;
+}
+
+.form-control > label{
+  display: block;
+}
+
+.displayInfo-container{
+  display: none;
+}
+
+.display-contacts{
+  margin: 10px 0px 10px 0px;
+}
+
+
+.display-field {
+  display: block;
+  margin: 5px;
+}
+
+.fieldTitle {
+  display: inline-block;
+  width: 120px;
+  text-align: right;
+  font-weight: 500;
+}
+.fieldValue {
+  font-weight:bolder;
+}
+
+.selectBox {
+  width: 370px;
+  overflow-y:scroll;
+  margin-left: 10px;
+  padding: 10px 60px 10px 10px;
+  height: 400px;
+}
+
+.option {
+  display: block;
+  background-color: #F5F5F5;
+  color: #111;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.selectBox-container {
+    width: 400px;
+}
+
+.mouseOverContainer {
+  position:absolute;
+  display:inline;
+  left:340px;
+  top:75px;
+  width: 30px;
+  height: 100%;
+  font-size: 20px;
+}
+
+.error {
+  color: red;
+  display: none;
+  text-align: right;
+  float: right;
+  width: 100%;
+}
+
+/* Tag Level*/
+
+button:focus {outline:0;}
+
+fieldset { border:1px solid #666 }
+
+legend {
+  padding: 0.2em 0.5em;
+  border:1px solid #666;
+  color:#333;
+  text-align:left;
+}
+
+input[type=text] {
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 20px;
+
+    display: block;
+    margin: 10px 0px 10px 0px;
+}
+
+select::-webkit-scrollbar {
+    width: 1em;
+}
+
+select::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+select::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+/* Helpers */
+
+.btn-lg { padding: 15px 32px; }
+
+.btn-sm { padding: 8px 12px; }
+
+.hide { display: none;}
+
+.width-200 { width: 200px; }
+
+.width-300 { width: 300px; }
+
+.width-400 { width: 400px; }
+
+.dir-rtl{ direction: rtl; }
+
+.block { display: block; }
+
+.block-inline { display: inline-block; }
+
+.m10 { margin: 10px; }
+
+.no-margin-right { margin-right: 0px; }
+
+.text-top { vertical-align: top; }

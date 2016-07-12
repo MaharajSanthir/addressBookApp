@@ -1,0 +1,77 @@
+<html>
+<head>
+  <title>Address Book App - By Maharaj Santhir</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <script src="jquery-3.0.0.min.js"></script>
+</head>
+<body >
+  <div class="container border-thin center-div">
+    <h1 style="font-weight:100; text-align:center; margin-top:25px; margin-bottom:10px;">Address Book</h1>
+    <span style="display:block; font-weight:100; text-align:center; margin-bottom:10px;"> By <a href='http://www.linkedin.com/in/msanthir'>Maharaj Santhir</a></span>
+    <div class="list-header m10 center-div" >
+      <label class="labelBoxed">Sort By:</label>
+      <button id="btnSortByFirstName" data-sortBy='firstName' class="button btn-sm btnSortBy"> First Name</button>
+      <button id="btnSortByLastName" data-sortBy='lastName' class="button btn-sm btnSortBy"> Last Name</button>
+      <button id="btnSortByPhone" data-sortBy='phone' class="button btn-sm btnSortBy"> Phone Number</button>
+
+      <button id='sampleContacts' class="button btn-sm">Sample Contacts</button>
+    </div>
+    <div class="list-body">
+      <div class="block m10">
+        <label class="labelBoxed">
+          Sort Order: <span id='lblSortOrder'>ASC</span>
+        </label>
+        <button id="btnAdd" class="button btn-sm"> Add</button>
+        <button id="btnDelete" class="button btn-sm" style="background-color:red"> Delete</button>
+      </div>
+
+      <div id="mouseOverContainer" class="mouseOverContainer">
+        <div id="atoz-select" class="atoz-select"></div>
+      </div>
+
+      <form>
+        <div class="selectBox-container block-inline text-top">
+          <select id='selectBox' multiple size='10' class='selectBox'>
+          </select>
+        </div>
+        <div class="rightside-container width-400 block-inline text-top">
+          <div id='addControls-container' class="addControls-container hide text-top m10">
+            <fieldset>
+              <legend>Add Contact:</legend>
+              <div class="form-control">
+                <label for="firstName">First Name:</label>
+                <input id="firstName" tabIndex='1' type="text" />
+                <span id="firstNameError" class="error">Error</span>
+              </div>
+              <div class="form-control">
+                <label for="lastName">Last Name:</label>
+                <input id="lastName" tabIndex='2' type="text" />
+                <span id="lastNameError" class="error">Error</span>
+              </div>
+              <div class="form-control">
+                <label for="phone">Phone Number:</label>
+                <input id="phone" tabIndex='3' type="text" />
+                <span id="phoneError" class="error">Error</span>
+              </div>
+              <div class="form-control m10 dir-rtl">
+                <button id="addBtn" tabIndex='3' class="button btn-sm m10 no-margin-right">Add Contact</button>
+                <button id='cancelAdd' tabIndex='4' class="button btn-sm m10">Cancel</button>
+              </div>
+            </fieldset>
+          </div>
+          <div id='displayInfo-container' class="displayInfo-container m10">
+            <fieldset>
+              <legend>Selected Contact:</legend>
+              <div id='selectedContactList'></div>
+            </fieldset>
+          </div>
+        </div>
+      </form>
+
+    </div>
+  </div>
+  <script src="script.js" type="text/javascript">
+</script>
+</body>
+</html>
